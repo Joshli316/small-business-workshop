@@ -1,4 +1,4 @@
-const CACHE = 'small-business-workshop-v1';
+const CACHE = 'small-business-workshop-v2';
 const ASSETS = [
   '/',
   '/index.html',

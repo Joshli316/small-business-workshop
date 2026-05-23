@@ -549,6 +549,39 @@ a:focus-visible {
   font-weight: 600;
 }
 
+/* ─── Flow-chart labels under SVG (Slide 6) ──────────────── */
+.viz-flow {
+  width: 100%;
+  max-width: 760px;
+}
+.viz-flow svg { display: block; margin: 0 auto; }
+.flow-labels {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4px;
+  width: 84%;
+  max-width: 600px;
+  margin: 2px auto 8px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  line-height: 1.25;
+}
+.flow-labels > div {
+  font-family: "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+}
+
+/* Quiz Q2 spacer (replaces inline style) */
+.quiz-question--spaced { margin-top: 16px; }
+
+/* QR sub-note (replaces inline style) */
+.qr-sub-note {
+  font-size: 13px;
+  color: var(--text-sub);
+  margin-top: 4px;
+}
+
 /* ─── Quiz (Slide 10) ────────────────────────────────────── */
 .quiz-question {
   background: var(--surface);
