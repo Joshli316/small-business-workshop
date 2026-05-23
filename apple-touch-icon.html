@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Apple Touch Icon — Small Business Workshop</title>
+<style>
+  :root {
+    --primary: #9a3412;
+    --primary-dark: #7c2d12;
+    --accent: #fbbf24;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 360px; height: 360px; overflow: hidden; }
+  body {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  body::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 30%, rgba(251,191,36,0.18) 0%, transparent 60%);
+  }
+  .icon {
+    color: #fef3e2;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 4px 18px rgba(0,0,0,0.35));
+  }
+</style>
+</head>
+<body>
+  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"></path>
+    <line x1="2" y1="7" x2="22" y2="7"></line>
+    <line x1="6" y1="22" x2="6" y2="12"></line>
+    <line x1="18" y1="22" x2="18" y2="12"></line>
+    <line x1="9" y1="14" x2="15" y2="14"></line>
+    <line x1="9" y1="18" x2="15" y2="18"></line>
+  </svg>
+</body>
+</html>
